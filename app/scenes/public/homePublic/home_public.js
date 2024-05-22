@@ -220,20 +220,21 @@ export async function HomePagePublic() {
     </footer>
     </div>
     `;
-  let text = document.getElementById('text');
-  let leaf = document.getElementById('leaf');
-  let hill1 = document.getElementById('hill1');
-  let hill4 = document.getElementById('hill4');
-  let hill5 = document.getElementById('hill5');
-  let header = document.getElementById('head');
-  let user = document.getElementById('user');
-  let carrito = document.getElementById('carrito');
-  let input = document.getElementById('input_1');
-  let aboutSection = document.getElementById('about_secion');
-  let SeeMore = document.getElementById("verMas");
-  let SeeMore1 = document.getElementById("verMas1");
-  let SeeMore2 = document.getElementById("verMas2");
-
+    let text = document.getElementById('text');
+    let leaf = document.getElementById('leaf');
+    let hill1 = document.getElementById('hill1');
+    let hill4 = document.getElementById('hill4');
+    let hill5 = document.getElementById('hill5');
+    let header = document.getElementById('head');
+    let user = document.getElementById('user');
+    let carrito = document.getElementById('carrito');
+    let input = document.getElementById('input_1');
+    let aboutSection = document.getElementById('about_secion');
+    let SeeMore = document.getElementById("verMas");
+    let SeeMore1 = document.getElementById("verMas1");
+    let SeeMore2 = document.getElementById("verMas2");
+    let servicePages = document.getElementById('service');
+    
   // Calcula la posición vertical de la sección "About Us"
   let aboutSectionPosition = aboutSection.offsetTop;
 
@@ -251,23 +252,6 @@ export async function HomePagePublic() {
     evento.preventDefault();
     navigateTo('/blog')
   })
-
-  SeeMore1.addEventListener('click', (evento) => {
-    evento.preventDefault();
-    navigateTo('/blog')
-  })
-
-  SeeMore2.addEventListener('click', (evento) => {
-    evento.preventDefault();
-    navigateTo('/blog')
-  })
-
-  SeeMore.addEventListener('click', (evento) => {
-    evento.preventDefault();
-    navigateTo('/blog')
-  })
-
-  let servicePages = document.getElementById('service');
 
   servicePages.addEventListener('click', (evento) => {
     evento.preventDefault();
