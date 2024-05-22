@@ -1,3 +1,32 @@
+import styles from "./style.css";
+import hill from "../../../assets/img/hill1.png";
+import hill2 from "../../../assets/img/hill2.png";
+import hill3 from "../../../assets/img/hill3.png";
+import hill_4 from "../../../assets/img/hill4.png";
+import hill_5 from "../../../assets/img/hill5.png";
+import facebook from "../../../assets/img/facebook.png";
+import casa from "../../../assets/img/casa.png";
+import comida from "../../../assets/img/comida.png";
+import hojaM from "../../../assets/img/hojaM.png";
+import cepillo from "../../../assets/img/cepillo.png";
+import papel from "../../../assets/img/papel.png";
+import leaff from "../../../assets/img/leaf.png";
+import logo from "../../../assets/img/logo.png";
+import plant from "../../../assets/img/plant.png";
+import tree from "../../../assets/img/tree.png";
+import imagenAbout from "../../../assets/img/imagenAbout.png";
+import whastp from "../../../assets/img/whastp.png";
+import youtube from "../../../assets/img/youtube.png";
+import arrow_back_ios_24dp_FILL0_wght400_GRAD0_opsz24 from "../../../assets/img/arrow_back_ios_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import arrow_forward_ios_24dp_FILL0_wght400_GRAD0_opsz24 from "../../../assets/img/arrow_forward_ios_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import person_24dp_FILL0_wght400_GRAD0_opsz24 from "../../../assets/img/person_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import search_24dp_FILL0_wght400_GRAD0_opsz24 from "../../../assets/img/search_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24 from "../../../assets/img/shopping_cart_24dp_FILL0_wght400_GRAD0_opsz24.svg";
+import style from "../../public/login/components/form/login-form.css";
+import { login } from "../login/components/form";
+import { formValidator } from "../../../helpers";
+import { navigateTo } from '../../../Router'
+
 import styles from './style.css';
 import hill from '../../../assets/img/hill1.png';
 import hill2 from '../../../assets/img/hill2.png';
@@ -142,7 +171,7 @@ export async function HomePagePublic() {
                 <div class="${styles.comentarios_text}">
                     <p class="${styles.artles_ttitle}">Lorem ipsum dolor sit.</p>
                     <p class="${styles.arles_txt}">Lorem ipsum dolor sit amet consectetur molestias. Eos ratione ex nisi voluptatem possimus natus qui iste iure soluta quam, corporis doloremque obcaecati sunt sequi, quaerat ullam at deserunt. Neque itaque animi accusantium architecto vitae. Accusantium veritatis aspernatur vitae excepturi atque? Rem incidunt quia vitae quidem, fugiat dolore quas iusto sequi exercitationem illum aperiam eos fugit nostrum </p>
-                    <a href="" class="${styles.btn3}">Read More</a>
+                    <a href="" class="${styles.btn3}" id="verMas">Read More</a>
                 </div>
             </div>
             <div class="${styles.algunos_comentarios}">
@@ -150,7 +179,7 @@ export async function HomePagePublic() {
                 <div class="${styles.comentarios_text}">
                     <p class="${styles.artles_ttitle}">Lorem ipsum dolor sit.</p>
                     <p class="${styles.arles_txt}">Lorem ipsum dolor sit amet consectetur molestias. Eos ratione ex nisi voluptatem possimus natus qui iste iure soluta quam, corporis doloremque obcaecati sunt sequi, quaerat ullam at deserunt. Neque itaque animi accusantium architecto vitae. Accusantium veritatis aspernatur vitae excepturi atque? Rem incidunt quia vitae quidem, fugiat dolore quas iusto sequi exercitationem illum aperiam eos fugit nostrum </p>
-                    <a href="" class="${styles.btn3}">Read More</a>
+                    <a href="" class="${styles.btn3}" id="verMas1">Read More</a>
                 </div>
             </div>
             <div class="${styles.algunos_comentarios}">
@@ -158,7 +187,7 @@ export async function HomePagePublic() {
                 <div class="${styles.comentarios_text}">
                     <p class="${styles.artles_ttitle}">Lorem ipsum dolor sit.</p>
                     <p class="${styles.arles_txt}">Lorem ipsum dolor sit amet consectetur molestias. Eos ratione ex nisi voluptatem possimus natus qui iste iure soluta quam, corporis doloremque obcaecati sunt sequi, quaerat ullam at deserunt. Neque itaque animi accusantium architecto vitae. Accusantium veritatis aspernatur vitae excepturi atque? Rem incidunt quia vitae quidem, fugiat dolore quas iusto sequi exercitationem illum aperiam eos fugit nostrum</p>
-                    <a href="" class="${styles.btn3}">Read More</a>
+                    <a href="" class="${styles.btn3}" id="verMas2">Read More</a>
                 </div>
             </div>
         </section>
@@ -201,9 +230,42 @@ export async function HomePagePublic() {
   let carrito = document.getElementById('carrito');
   let input = document.getElementById('input_1');
   let aboutSection = document.getElementById('about_secion');
+  let SeeMore = document.getElementById("verMas");
+  let SeeMore1 = document.getElementById("verMas1");
+  let SeeMore2 = document.getElementById("verMas2");
 
   // Calcula la posición vertical de la sección "About Us"
   let aboutSectionPosition = aboutSection.offsetTop;
+
+  SeeMore1.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    navigateTo('/blog')
+  })
+
+  SeeMore2.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    navigateTo('/blog')
+  })
+
+  SeeMore.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    navigateTo('/blog')
+  })
+
+  SeeMore1.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    navigateTo('/blog')
+  })
+
+  SeeMore2.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    navigateTo('/blog')
+  })
+
+  SeeMore.addEventListener('click', (evento) => {
+    evento.preventDefault();
+    navigateTo('/blog')
+  })
 
   let servicePages = document.getElementById('service');
 
